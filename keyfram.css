@@ -1,0 +1,51 @@
+#port-folio{
+    opacity: 0;
+    display: block;
+    animation: rotate 3s linear forwards;
+}
+
+#nav-a a{
+    opacity: 0;
+    display: inline-block;
+    animation: right 4s linear forwards;
+}
+
+#name-my{
+    opacity: 0;
+    /* position: absolute; */
+    display: block;
+    animation: name 4s linear forwards;
+}
+
+@keyframes rotate {
+    0%{
+        opacity: 0;
+        transform: rotateY('290deg');
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY('0deg');
+    }
+}
+
+@keyframes right {
+    0%{
+        opacity: 0;
+        right: -250px;
+    }
+    100%{
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes name {
+    0%{
+        opacity: 0;
+        left: -2250px;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+    }
+}
